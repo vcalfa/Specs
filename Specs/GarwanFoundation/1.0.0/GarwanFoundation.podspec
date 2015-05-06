@@ -17,17 +17,21 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Ulianko/GarwanFoundation.git", :tag => "1.0.0"}
 
-  s.source_files     = 'ViewModel/*.{h,m}', 'Model/*.{h,m}'
   s.requires_arc     = true
 
-  s.dependency 'AFNetworking', '~> 2.0'
-  s.dependency 'Mantle'
-  s.dependency 'ReactiveCocoa'
-  s.dependency 'ReactiveViewModel'
-#  s.dependency 'MagicalRecord'
-  s.dependency 'DOSingleton'
-  s.dependency 'AFNetworkActivityLogger'
-  s.dependency 'KeychainItemWrapper'
-  s.dependency 'GROAuth2SessionManager'
+  s.subspec 'ViewModel' do |ss|
+    ss.source_files = 'ViewModel/*.{h,m}'
+    ss.dependency 'ReactiveCocoa'
+    ss.dependency 'ReactiveViewModel'
+  end
 
+  s.subspec 'Model' do |ss|
+    ss.source_files = 'Model/*.{h,m}'
+    ss.dependency 'AFNetworking', '~> 2.0'
+    ss.dependency 'Mantle'
+    ss.dependency 'DOSingleton'
+    ss.dependency 'GROAuth2SessionManager'
+    ss.dependency 'AFNetworkActivityLogger'
+    ss.dependency 'KeychainItemWrapper'
+  end
 end
