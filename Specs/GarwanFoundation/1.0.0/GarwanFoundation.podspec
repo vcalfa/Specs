@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.dependency 'DOSingleton'
   s.dependency 'AFNetworkActivityLogger'
   s.dependency 'KeychainItemWrapper'
-#  s.dependency 'GROAuth2SessionManager'
+  s.dependency 'GROAuth2SessionManager'
 
 end
