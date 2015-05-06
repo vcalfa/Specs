@@ -17,8 +17,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Ulianko/GarwanFoundation.git", :tag => "1.0.0"}
 
-  s.source_files     = 'Model/*.{h,m}'
-  s.source_files     = 'ViewModel/*.{h,m}'
+  s.source_files     = '*'
   s.requires_arc     = true
 
   s.dependency 'AFNetworking', '~> 2.0'
