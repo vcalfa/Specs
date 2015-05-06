@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/Ulianko/GarwanFoundation"
 
-  s.license      =   { :type => 'LICENSE'}
+  s.license      =   { :type => 'BSD'}
 
 
   s.author             = { "Martin Ulianko" => "martin@ulianko.com" }
