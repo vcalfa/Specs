@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/Ulianko/GarwanFoundation"
 
-  s.license      =   { :type => 'BSD'}
-
+  s.license      =   { :type => 'MIT'}
 
   s.author             = { "Martin Ulianko" => "martin@ulianko.com" }
   s.social_media_url = "http://twitter.com/MartinUlianko"
@@ -26,10 +25,10 @@ Pod::Spec.new do |s|
   s.dependency 'Mantle'
   s.dependency 'ReactiveCocoa'
   s.dependency 'ReactiveViewModel'
-  s.dependency 'MagicalRecord'
+#  s.dependency 'MagicalRecord'
   s.dependency 'DOSingleton'
   s.dependency 'AFNetworkActivityLogger'
   s.dependency 'KeychainItemWrapper'
-  s.dependency 'GROAuth2SessionManager'
+#  s.dependency 'GROAuth2SessionManager'
 
 end
