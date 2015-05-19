@@ -27,11 +27,31 @@ Pod::Spec.new do |s|
 
   s.subspec 'Model' do |ss|
     ss.source_files = 'Model/*.{h,m}'
-    ss.dependency 'AFNetworking', '~> 2.0'
     ss.dependency 'Mantle'
     ss.dependency 'DOSingleton'
-    ss.dependency 'GROAuth2SessionManager'
-    ss.dependency 'AFNetworkActivityLogger'
     ss.dependency 'KeychainItemWrapper'
+  end
+
+  s.subspec 'Managers' do |ss|
+    ss.source_files = 'Managers/*.{h,m}'
+    ss.dependency 'KeychainItemWrapper'
+    ss.dependency 'DOSingleton'
+  end
+
+  s.subspec 'Networking' do |ss|
+    ss.source_files = 'Managers/*.{h,m}'
+    ss.dependency 'KeychainItemWrapper'
+    ss.dependency 'DOSingleton'
+    ss.dependency 'AFNetworking', '~> 2.0'
+    ss.dependency 'AFOAuth2Manager'
+    ss.dependency 'AFNetworkActivityLogger'
+  end
+
+  s.subspec 'Categories' do |ss|
+    ss.source_files = 'Categories/*.{h,m}'
+  end
+
+  s.subspec 'Supporting Files' do |ss|
+    ss.source_files = 'Supporting Files/*.{h,m}'
   end
 end
