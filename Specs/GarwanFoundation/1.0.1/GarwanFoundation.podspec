@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "GarwanFoundation"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Garwan Foundation Framework"
 
-  s.homepage     = "https://github.com/Ulianko/GarwanFoundation"
+  s.homepage     = "https://github.com/garwan/garwan-ios-foundation"
 
   s.license      =   { :type => 'MIT'}
 
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/garwan/garwan-ios-foundation.git", :tag => "1.0.0"}
+  s.source       = { :git => "https://github.com/garwan/garwan-ios-foundation.git", :tag => "1.0.1"}
 
   s.requires_arc     = true
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Networking' do |ss|
-    ss.source_files = 'Managers/*.{h,m}'
+    ss.source_files = 'Networking/*.{h,m}'
     ss.dependency 'KeychainItemWrapper'
     ss.dependency 'DOSingleton'
     ss.dependency 'AFNetworking', '~> 2.0'
