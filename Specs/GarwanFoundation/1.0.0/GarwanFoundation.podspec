@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "Garwan Foundation Framework"
 
-  s.homepage     = "https://github.com/Ulianko/GarwanFoundation"
+  s.homepage     = "https://github.com/garwan/garwan-ios-foundation"
 
   s.license      =   { :type => 'MIT'}
 
