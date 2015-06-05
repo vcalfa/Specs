@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Networking' do |ss|
-    ss.source_files = 'Managers/*.{h,m}'
+    ss.source_files = 'Networking/*.{h,m}'
     ss.dependency 'KeychainItemWrapper'
     ss.dependency 'DOSingleton'
     ss.dependency 'AFNetworking', '~> 2.0'
