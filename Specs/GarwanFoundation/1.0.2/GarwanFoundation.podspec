@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GarwanFoundation"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Garwan Foundation Framework"
 
   s.homepage     = "https://github.com/garwan/garwan-ios-foundation"
