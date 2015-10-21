@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/garwan/garwan-ios-foundation.git", :tag => "1.0.6"}
+  s.source       = { :git => "https://github.com/garwan/garwan-ios-foundation.git", :tag => s.version }
 
   s.requires_arc     = true
 
@@ -27,22 +27,22 @@ Pod::Spec.new do |s|
 
   s.subspec 'Model' do |ss|
     ss.source_files = 'Model/*.{h,m}'
-    ss.dependency 'Mantle', '~> 2.0.5'
-    ss.dependency 'MTLManagedObjectAdapter', '~> 1.0'
-    ss.dependency 'DOSingleton', '~> 0.1.0'
+    ss.dependency 'Mantle', '2.0.5'
+    ss.dependency 'MTLManagedObjectAdapter', '1.0'
+    ss.dependency 'DOSingleton', '0.1.0'
   end
 
   s.subspec 'Managers' do |ss|
     ss.source_files = 'Managers/*.{h,m}'
-    ss.dependency 'DOSingleton', '~> 0.1.0'
+    ss.dependency 'DOSingleton', '0.1.0'
   end
 
   s.subspec 'Networking' do |ss|
     ss.source_files = 'Networking/*.{h,m}'
-    ss.dependency 'DOSingleton', '~> 0.1.0'
-    ss.dependency 'AFNetworking', '~> 2.0'
-    ss.dependency 'AFOAuth2Manager', '~> 2.2.0'
-    ss.dependency 'AFNetworkActivityLogger', '~> 2.0.4'
+    ss.dependency 'DOSingleton', '0.1.0'
+    ss.dependency 'AFNetworking', '2.0'
+    ss.dependency 'AFOAuth2Manager', '2.2.0'
+    ss.dependency 'AFNetworkActivityLogger', '2.0.4'
   end
 
   s.subspec 'Categories' do |ss|
