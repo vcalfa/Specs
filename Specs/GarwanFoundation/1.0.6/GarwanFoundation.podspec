@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   s.subspec 'Networking' do |ss|
     ss.source_files = 'Networking/*.{h,m}'
     ss.dependency 'DOSingleton', '0.1.0'
-    ss.dependency 'AFNetworking', '2.0'
+    ss.dependency 'AFNetworking', '2.6.0'
     ss.dependency 'AFOAuth2Manager', '2.2.0'
     ss.dependency 'AFNetworkActivityLogger', '2.0.4'
   end
