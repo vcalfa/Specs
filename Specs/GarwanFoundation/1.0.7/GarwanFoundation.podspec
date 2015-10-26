@@ -15,13 +15,16 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/garwan/garwan-ios-foundation.git", :tag => s.version }
+  s.source       = { 
+    :git => "https://github.com/garwan/garwan-ios-foundation.git", 
+    :tag => s.version 
+  }
 
   s.requires_arc     = true
 
   s.subspec 'ViewModel' do |ss|
     ss.source_files = 'ViewModel/*.{h,m}'
-    ss.dependency 'ReactiveCocoa', '3.0'
+    ss.dependency 'ReactiveCocoa'
   end
 
   s.subspec 'Model' do |ss|
