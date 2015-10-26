@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://twitter.com/robos23"
 
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/garwan/garwan-ios-foundation.git", :tag => s.version }
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.subspec 'ViewModel' do |ss|
     ss.source_files = 'ViewModel/*.{h,m}'
     ss.dependency 'ReactiveCocoa', '3.0'
-    ss.dependency 'ReactiveViewModel'
+    ss.dependency 'ReactiveViewModel', '0.3.3'
   end
 
   s.subspec 'Model' do |ss|
