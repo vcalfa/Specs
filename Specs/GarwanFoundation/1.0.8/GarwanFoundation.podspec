@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'ViewModel' do |ss|
     ss.source_files = 'ViewModel/*.{h,m}'
-    ss.dependency 'ReactiveCocoa', '4.0'
+    ss.dependency 'ReactiveCocoa', '4.0.0-alpha-3'
   end
 
   s.subspec 'Model' do |ss|
